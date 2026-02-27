@@ -1,7 +1,7 @@
 # 🚀 Bootstrap 5 Component Remix Project
 
 ## 🔗 Project Link
-* **Live Deployment:** nagendrareddy-medapati.netlify.app
+* **Live Deployment:** https://nagendrareddy-medapati.netlify.app/
 ---
 
 ## 📝 Project Overview
