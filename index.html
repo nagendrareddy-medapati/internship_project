@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap Remix | Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -31,41 +32,39 @@
                 <h1 class="display-4 fw-bold text-dark">Modern Design, Remixed.</h1>
                 <p class="lead mb-4">Building responsive layouts shouldn't be a chore. We take the best parts of Bootstrap 5 and blend them into something truly unique.</p>
                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                    <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Get Started</button>
-                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">View Gallery</button>
+                    <a href="contact.html" class="btn btn-primary btn-lg px-4 gap-3">Get Started</a>
+    
+                    <a href="about.html#team" class="btn btn-outline-secondary btn-lg px-4">View Gallery</a>
                 </div>
             </div>
         </div>
     </section>
 
     
-    <section class="py-5" id="features">
-        <div class="container px-5 my-5">
-            <div class="row g-5">
-                <div class="col-lg-4">
-                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3 p-3 d-inline-block">
-                        <i class="bi bi-collection"></i>
-                    </div>
-                    <h2 class="h4 fw-bolder">Responsive Layouts</h2>
-                    <p>Paragraph of text beneath the heading to explain the feature. We'll use the Bootstrap grid to ensure this looks great on any screen size.</p>
-                </div>
-                <div class="col-lg-4">
-                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3 p-3 d-inline-block">
-                        <i class="bi bi-building"></i>
-                    </div>
-                    <h2 class="h4 fw-bolder">Custom Components</h2>
-                    <p>We don't just copy; we adapt. Every component is tuned for performance and accessibility.</p>
-                </div>
-                <div class="col-lg-4">
-                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3 p-3 d-inline-block">
-                        <i class="bi bi-toggles2"></i>
-                    </div>
-                    <h2 class="h4 fw-bolder">Modern Utility</h2>
-                    <p>Leveraging the power of utility-first CSS within the Bootstrap ecosystem to speed up development.</p>
-                </div>
+<section class="py-5" id="features">
+    <div class="container px-5 my-5">
+        <div class="row g-5">
+            <div class="col-lg-4 text-center">
+                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3 p-3 d-inline-flex align-items-center justify-content-center" style="width: 64px; height: 64px;">
+                    <i class="bi bi-laptop fs-2"></i> </div>
+                <h2 class="h4 fw-bolder">Responsive Layouts</h2>
+                <p>Ensuring your site looks perfect on smartphones, tablets, and wide-screen monitors using Bootstrap's flexbox grid.</p>
+            </div>
+            <div class="col-lg-4 text-center">
+                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3 p-3 d-inline-flex align-items-center justify-content-center" style="width: 64px; height: 64px;">
+                    <i class="bi bi-puzzle fs-2"></i> </div>
+                <h2 class="h4 fw-bolder">Custom Components</h2>
+                <p>We don't just copy; we adapt. Every component is tuned for high performance and modern accessibility standards.</p>
+            </div>
+            <div class="col-lg-4 text-center">
+                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3 p-3 d-inline-flex align-items-center justify-content-center" style="width: 64px; height: 64px;">
+                    <i class="bi bi-lightning-charge fs-2"></i> </div>
+                <h2 class="h4 fw-bolder">Modern Utility</h2>
+                <p>Leveraging the lightning-fast power of utility-first CSS within the Bootstrap ecosystem to speed up our workflow.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <footer class="py-5 bg-dark">
         <div class="container px-5"><p class="m-0 text-center text-white">Copyright &copy; Remix Project 2026</p></div>
