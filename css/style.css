@@ -1,0 +1,29 @@
+/* Custom Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #333;
+}
+
+/* Overriding the Primary Color */
+.btn-primary, .bg-primary {
+    background-color: #6366f1 !important; /* Modern Indigo */
+    border-color: #6366f1 !important;
+}
+
+/* Adding a subtle hover effect to cards */
+.col-lg-4:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+/* Feature Icon Styling */
+.feature {
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
