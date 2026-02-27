@@ -26,41 +26,53 @@
         </div>
     </nav>
 
-    <section class="bg-light py-5 border-bottom">
+    <section class="hero-section py-5">
         <div class="container px-5 my-5">
-            <div class="text-center">
-                <h1 class="display-4 fw-bold text-dark">Modern Design, Remixed.</h1>
-                <p class="lead mb-4">Building responsive layouts shouldn't be a chore. We take the best parts of Bootstrap 5 and blend them into something truly unique.</p>
-                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                    <a href="contact.html" class="btn btn-primary btn-lg px-4 gap-3">Get Started</a>
-    
-                    <a href="about.html#team" class="btn btn-outline-secondary btn-lg px-4">View Gallery</a>
+            <div class="text-center text-white position-relative" style="z-index: 2;">
+                <h1 class="display-3 fw-bold mb-3 fade-in-up">Modern Design, <span class="gradient-text">Remixed</span></h1>
+                <p class="lead mb-5 fade-in-up" style="animation-delay: 0.2s;">Building responsive layouts shouldn't be a chore. We take the best parts of Bootstrap 5 and blend them into something truly unique.</p>
+                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center fade-in-up" style="animation-delay: 0.4s;">
+                    <a href="contact.html" class="btn btn-primary btn-lg px-5 py-3">Get Started</a>
+                    <a href="about.html#team" class="btn btn-outline-secondary btn-lg px-5 py-3 text-white">View Gallery</a>
                 </div>
             </div>
         </div>
     </section>
 
-    
-<section class="py-5" id="features">
+
+<section class="py-5 bg-light" id="features">
     <div class="container px-5 my-5">
+        <div class="text-center mb-5 scroll-fade">
+            <h2 class="display-5 fw-bold">Why Choose Us</h2>
+            <p class="lead text-muted">Powerful features for modern web development</p>
+        </div>
         <div class="row g-5">
-            <div class="col-lg-4 text-center">
-                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3 p-3 d-inline-flex align-items-center justify-content-center" style="width: 64px; height: 64px;">
-                    <i class="bi bi-laptop fs-2"></i> </div>
-                <h2 class="h4 fw-bolder">Responsive Layouts</h2>
-                <p>Ensuring your site looks perfect on smartphones, tablets, and wide-screen monitors using Bootstrap's flexbox grid.</p>
+            <div class="col-lg-4 scroll-fade">
+                <div class="feature-card text-center p-4 bg-white rounded-4 shadow-sm h-100">
+                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mx-auto">
+                        <i class="bi bi-laptop"></i>
+                    </div>
+                    <h2 class="h4 fw-bolder mb-3">Responsive Layouts</h2>
+                    <p class="text-muted">Ensuring your site looks perfect on smartphones, tablets, and wide-screen monitors using Bootstrap's flexbox grid.</p>
+                </div>
             </div>
-            <div class="col-lg-4 text-center">
-                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3 p-3 d-inline-flex align-items-center justify-content-center" style="width: 64px; height: 64px;">
-                    <i class="bi bi-puzzle fs-2"></i> </div>
-                <h2 class="h4 fw-bolder">Custom Components</h2>
-                <p>We don't just copy; we adapt. Every component is tuned for high performance and modern accessibility standards.</p>
+            <div class="col-lg-4 scroll-fade">
+                <div class="feature-card text-center p-4 bg-white rounded-4 shadow-sm h-100">
+                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mx-auto">
+                        <i class="bi bi-puzzle"></i>
+                    </div>
+                    <h2 class="h4 fw-bolder mb-3">Custom Components</h2>
+                    <p class="text-muted">We don't just copy; we adapt. Every component is tuned for high performance and modern accessibility standards.</p>
+                </div>
             </div>
-            <div class="col-lg-4 text-center">
-                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3 p-3 d-inline-flex align-items-center justify-content-center" style="width: 64px; height: 64px;">
-                    <i class="bi bi-lightning-charge fs-2"></i> </div>
-                <h2 class="h4 fw-bolder">Modern Utility</h2>
-                <p>Leveraging the lightning-fast power of utility-first CSS within the Bootstrap ecosystem to speed up our workflow.</p>
+            <div class="col-lg-4 scroll-fade">
+                <div class="feature-card text-center p-4 bg-white rounded-4 shadow-sm h-100">
+                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-4 mx-auto">
+                        <i class="bi bi-lightning-charge"></i>
+                    </div>
+                    <h2 class="h4 fw-bolder mb-3">Modern Utility</h2>
+                    <p class="text-muted">Leveraging the lightning-fast power of utility-first CSS within the Bootstrap ecosystem to speed up our workflow.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -71,5 +83,25 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -100px 0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.scroll-fade').forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
 </body>
 </html>
